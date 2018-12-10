@@ -80,7 +80,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
 .header .logo{
     width:185px;
     height:48px;
-    background: url('logo.png');
+    background: url('https://AiHuiHealth.github.io/aihuiWeb/logo.png');
     position:absolute;
     top:18px;
     left:16%;
