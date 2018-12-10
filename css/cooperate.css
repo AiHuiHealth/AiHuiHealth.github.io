@@ -1,0 +1,133 @@
+.wrap{
+    background-color: #f5f5f5;
+}
+.bg{
+    width:100%;
+    margin-top: 80px;
+}
+@media screen and (max-width: 1000px){
+    .bg{
+        margin-top: 148px;
+    }
+}
+.bg img{
+    width:100%;
+    /*height:704px;*/
+}
+.tab{
+    width:100%;
+    height:70px;
+    line-height:70px;
+    font-size:26px;
+    color:#333;
+    margin-bottom:50px;
+    margin-top:30px;
+}
+.tab ul{
+    width:64%;
+    overflow:hidden;
+    margin:0 auto;
+    vertical-align: middle;
+}
+.tab ul li{
+    float:left;
+    width:25%;
+    text-align:center;
+    cursor: pointer;
+}
+.tab ul li:last-child{
+    margin-right:0;
+}
+.tab ul li.selected{
+    color:#00a39c;
+    position:relative;
+}
+.tab ul li.selected i{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    background-color: #00a39c;
+    position:absolute;
+    top:8px;
+    left:50%;
+}
+.main{
+    width:100%;
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/add-bgc.jpg') no-repeat;
+    position:relative;
+}
+.main1{
+    width:100%;
+    /*height:1500px;*/
+    /*background: url('http://file.aihuizhongyi.com/aihuiWeb/add-bg.jpg') no-repeat;*/
+}
+.main1 p{
+    width:100%;
+    font-size:22px;
+    color:#333;
+    letter-spacing: 4px;
+    padding-left:15%;
+}
+.main1 ul{
+    width:70%;
+    margin:40px auto 0;
+    overflow:hidden;
+    padding:4px;
+}
+.main1 ul li{
+    width:22%;
+    /*height:288px;*/
+    float:left;
+    box-shadow:0px 0px  10px 2px #ccc;
+    margin-right:2%;
+    margin-bottom:40px;
+}
+.main1 ul li img{
+    width:100%;
+    height:100%;
+    display:block;
+}
+.main1 ul li:nth-child(4n) {
+    margin-right:0px;
+}
+.main1 ul li:last-child{
+    box-shadow: none;
+}
+.main2,.main3,.main4{
+    width:100%;
+    height:780px;
+    /*background: url('http://file.aihuizhongyi.com/aihuiWeb/add-bg.jpg') no-repeat;*/
+}
+.main2 img,.main3 img,.main4 img{
+    width:66%;
+    margin-left:17%;
+    /*height:740px;*/
+    /*transform:translateX(-50%);*/
+}
+#map{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin:0;
+    font-family:"微软雅黑";
+    position:absolute;
+    top:-90px;
+    right:14%;
+    display:none;
+    box-shadow:0px 0px  6px 2px #aaa;
+}
+.div-row{
+    width: 0px;
+    height: 0px;
+    border-top: 16px solid transparent;
+    border-left: 16px solid #fff;
+    border-bottom: 16px solid transparent;
+    position:absolute;
+    right:314px;
+    top:34px;
+    display:none;
+}
+.info{
+    right: 10%!important;
+}

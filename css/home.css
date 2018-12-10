@@ -1,0 +1,272 @@
+
+/*aboutus内容0*/
+.about-wrap{
+    width:100%;
+    margin-top: 80px;
+}
+@media screen and (max-width: 1000px){
+    .about-wrap{
+        width:100%;
+        margin-top: 148px;
+    }
+}
+.about-wrap img{
+    width:100%;
+    margin-top:-4px;
+    display:block;
+}
+.introduce-wrap{
+    width:100%;
+    position:relative;
+}
+.introduce-wrap div{
+    width:52%;
+    /*height:564px;*/
+    background-color: rgba(256,256,256,0.6);
+    position:absolute;
+    top:17%;
+    left:16%;
+    box-shadow:0px 0px  6px 2px #aaa;
+}
+.introduce-wrap img:nth-child(1){
+    width:100%;
+}
+.introduce-wrap img:nth-child(2){
+    width:100%;
+    height:100%;
+}
+.introduce-wrap div:hover{
+    box-shadow:0px 0px  30px 2px #666;
+}
+.cp-wrap{
+    width:100%;
+    position:relative;
+}
+.home-news{
+    width:100%;
+    position: relative;
+}
+.home-news img{
+    width:100%;
+}
+.home-news ul{
+    width:66%;
+    margin:0 auto;
+    overflow:hidden;
+    position:absolute;
+    top:23%;
+    left:50%;
+    transform: translateX(-50%);
+    padding:10px;
+}
+.home-news ul li{
+    width:32%;
+    float:left;
+    margin-right:2%;
+    box-shadow:0px 0px  6px 2px #aaa;
+}
+.home-news ul li:last-child{
+    margin-right:0;
+}
+.home-news ul li img{
+    width:100%;
+}
+.home-news ul li:hover{
+    box-shadow:0px 0px  20px 1px #666;
+}
+.cp-wrap img:nth-child(1){
+    width:100%;
+}
+.cp-wrap ul{
+    position:absolute;
+    width:66%;
+    margin:0 auto;
+    top:68%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.cp-wrap ul li{
+    width:23%;
+    float:left;
+    margin-right:2%;
+    cursor: pointer;
+    box-shadow:0px 0px  6px 2px #aaa;
+}
+.cp-wrap ul li:last-child:last-child{
+    margin-right:0;
+}
+.cp-wrap ul li:hover{
+    box-shadow:0px 0px  30px 2px #666;
+}
+.company-wrap{
+    width:100%;
+    position:relative;
+    margin-top:-4px;
+    cursor: pointer;
+}
+.company-wrap ul{
+    position:absolute;
+    width:66%;
+    margin:0 auto;
+    top:24%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.company-wrap ul li{
+    width:23%;
+    float:left;
+    margin-right:2%;
+    cursor: pointer;
+    box-shadow: 10px;
+}
+.company-wrap ul li img{
+    display:block;
+}
+.company-wrap ul li:last-child{
+    margin-right:0;
+}
+.company-wrap ul li:hover{
+    /*box-shadow:0px 0px  6px 2px #aaa;*/
+}
+.company-wrap .row{
+    width:46px;
+    height:46px;
+    position:absolute;
+    top: 68%;
+    left: 30%;
+    cursor: pointer;
+}
+.user{
+    margin-top:-4px;
+}
+.user, .user img{
+    width:100%;
+}
+/*footer*/
+.footer{
+    width:100%;
+    height:314px;
+    background-color: #262729;
+    margin-top:-4px;
+}
+.footer .main{
+    width:72%;
+    margin: 0 auto;
+    font-size:14px;
+    color:#fff;
+    letter-spacing:2px;
+    padding-top:78px;
+}
+.footer .main ul{
+    width:100%;
+    overflow:hidden;
+    margin-bottom:42px;
+}
+.footer .main ul li{
+    float:left;
+    margin-right:76px;
+    cursor: pointer;
+}
+.footer .main ul li.selected{
+    color:#00a39c;
+}
+.footer .main ul li:last-child{
+    margin-right:0;
+}
+.footer .main .t-pc-d{
+    margin-bottom:42px;
+}
+.footer .main .t-pc-d span:nth-child(1){
+    margin-right:46px;
+}
+.footer .main .t-pc-d span:nth-child(2){
+    margin-right:304px;
+}
+.footer .main .community{
+    position:relative;
+}
+.footer .main .community span:nth-child(1){
+    margin-right:2%;
+}
+.footer .main .community span:nth-child(2){
+    margin-right:7%;
+}
+.footer .main .community span:nth-child(3){
+    width:11.2rem;
+    height:2.98rem;
+    display:inline-block;
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/logo2.png')no-repeat;
+    position:absolute;
+    top:-14px;
+}
+.footer .main .community span:nth-child(4){
+    position:absolute;
+    top:-10px;
+    right:0;
+}
+.footer .main .community span:nth-child(4) i{
+    display: inline-block;
+    margin-right:20px;
+    cursor: pointer;
+}
+.footer .main .community span:nth-child(4) i:last-child{
+    margin-right:0;
+}
+.footer .main .community span:nth-child(4) i:nth-child(1){
+    width:2rem;
+    height:2rem;
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/phone.png')no-repeat;
+    position:relative;
+}
+.footer .main .community span:nth-child(4) i:nth-child(1) em{
+    position:absolute;
+    top:-66px;
+    left:-36px;
+    display:none;
+}
+.footer .main .community span:nth-child(4) i:nth-child(2){
+    width:2.6rem;
+    height:2rem;
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/wx.png')no-repeat;
+}
+.footer .main .community span:nth-child(4) i:nth-child(2) em{
+    position:absolute;
+    top:-196px;
+    left:0px;
+    display:none;
+}
+.footer .main .community span:nth-child(4) i:nth-child(3){
+    width:2.2rem;
+    height:2.2rem;
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/email.png')no-repeat;
+}
+.footer .main .community span:nth-child(4) i:nth-child(3) em{
+    position:absolute;
+    top:-66px;
+    left:-36px;
+    display:none;
+}
+.footer .main .community span:nth-child(4) i:nth-child(4){
+    width:1.6rem;
+    height:2.2rem;
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/map.png')no-repeat;
+}
+.footer .main .community span:nth-child(4) i:nth-child(4) em{
+    position:absolute;
+    top:-870px;
+    left:-300px;
+    display:inline-block;
+    /*display:none;*/
+}
+#map{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin:0;
+    font-family:"微软雅黑";
+    position:absolute;
+    bottom:140px;
+    right:140px;
+    display:none;
+    box-shadow:0px 0px  6px 2px #aaa;
+}

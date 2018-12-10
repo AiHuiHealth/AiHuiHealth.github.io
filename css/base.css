@@ -1,0 +1,274 @@
+html,body{
+    width: 100%;
+    /*height: 100%;*/
+}
+
+
+body{font-family: Arial, "微软雅黑";
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    position: relative;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+.wrap{
+    width:100%;
+    height:100%;
+}
+
+/* 初始化一些样式 */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    /* 去除移动端 默认的 手指 点击 高亮效果  transparent 透明*/
+    -webkit-tap-highlight-color: transparent;
+
+    /* 添加 盒子模型 为了 优先 保证 盒子的 大小 */
+    -webkit-box-sizing:border-box ;
+    box-sizing: border-box;
+}
+img{
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+/*!* a标签 *!*/
+/*a{text-decoration: none;}*/
+
+ul,ol{list-style: none;}
+/* 移动端 会取出 他四周的 边框 */
+input[type="text"],input[type="password"],input[type="submit"],select{
+    border: none;
+    outline: none;
+    /* 有一些 移动端的浏览器 会有默认的 3d效果 比如 阴影,3d渐变 */
+    -webkit-appearance: none;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.wrap{
+    width:100%;
+}
+/*header*/
+.header{
+    width:100%;
+    height:80px;
+    background: rgba(256,256,256,1);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99;
+}
+.header .logo{
+    width:185px;
+    height:48px;
+    background: url('logo.png');
+    position:absolute;
+    top:18px;
+    left:16%;
+}
+.tab-wrap{
+    float:right;
+    width:70%;
+    height:100%;
+    padding-top:10px;
+    text-align:right;
+}
+.tab-wrap ul{
+    width:100%;
+    text-align:right;
+    overflow:hidden;
+    padding-right:22%;
+}
+.tab-wrap li{
+    font-size:20px;
+    height:70px;
+    line-height:70px;
+    color:#333;
+    float:right;
+    margin-right:4%;
+    letter-spacing:4px;
+    cursor:pointer;
+}
+.tab-wrap li.selected{
+    color:#00a39c;
+    border-bottom:4px solid #00a39c;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.news-img{
+    width: 100%;
+    /*margin-top:80px;*/
+}
+
+.info{
+    width:44px;
+    height:200px;
+    position:absolute;
+    top: 40px;
+    right: 16%;
+}
+.info i{
+    display:block;
+    width:44px;
+    height:42px;
+    position:relative;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+.info i em img{
+    /*box-shadow:0px 0px  6px 2px #aaa;*/
+}
+.info i:nth-child(1) {
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/map3.png');
+}
+.info i:nth-child(1) em{
+    position:absolute;
+    top:-400px;
+    right:46px;
+    display:none;
+}
+.info i:nth-child(2) {
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/email3.png');
+}
+.info i:nth-child(2) em{
+    position:absolute;
+    top:-4px;
+    right:46px;
+    display:none;
+}
+.info i:nth-child(3) {
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/wx3.png');
+}
+.info i:nth-child(3) em{
+    position:absolute;
+    top:-76px;
+    right:46px;
+    display:none;
+}
+.info i:nth-child(4) {
+    background: url('http://file.aihuizhongyi.com/aihuiWeb/phone3.png');
+}
+.info i:nth-child(4) em{
+    position:absolute;
+    top:-2px;
+    right:46px;
+    display:none;
+}
+
+@media screen and (max-width: 1000px) {
+    .header{
+        height:148px;
+    }
+    .header .logo{
+        width:185px;
+        height:48px;
+        background: url('http://file.aihuizhongyi.com/aihuiWeb/logo.png');
+        position:absolute;
+        top:70px;
+        left:2%;
+    }
+    .header .menu{
+        width:42px;
+        height:38px;
+        background: url('http://file.aihuizhongyi.com/aihuiWeb/menu.png');
+        position:absolute;
+        top:75px;
+        right:4%;
+    }
+    .header .title{
+        font-size:36px;
+        color:#00a39c;
+        position: absolute;
+        top: 70px;
+        left: 28%;
+    }
+    .sidenav{
+        width:38%;
+        height:100%;
+        position:fixed;
+        top:0;
+        right:0;
+        background-color: #fff;
+        z-index:99;
+        padding-top:70px;
+        padding-left:20px;
+        display:none;
+    }
+    .sidenav .close{
+        width:40px;
+        height:40px;
+        background: url('http://file.aihuizhongyi.com/aihuiWeb/close.png');
+    }
+    .sidenav ul{
+        width:100%;
+        font-size:36px;
+        color: #333;
+        margin-top:44px;
+    }
+    .sidenav ul li{
+        margin-bottom:30px;
+        padding-left:20px;
+    }
+    .sidenav ul li.selected{
+        color:#00a39c;
+        border-left:4px solid #00a39c;
+    }
+    .footer{
+        display:none;
+    }
+    .phone-footer{
+        width:100%;
+        height:150px;
+        background-color: #fff;
+    }
+    .phone-footer div{
+        width:100%;
+        height:100px;
+        line-height:100px;
+        font-size:32px;
+        color:#333;
+        padding:0 16px;
+    }
+    .phone-footer div span:nth-child(1) {
+        color:#00a39c;
+    }
+    .phone-footer div .back-top{
+        float:right;
+    }
+    .phone-footer p:nth-child(2) {
+        width:100%;
+        height:50px;
+        line-height:50px;
+        font-size:24px;
+        color:#666;
+        text-align:center;
+        border-top:1px solid #666666;
+    }
+    .news-img{
+        width: 100%;
+        margin-top: 160px !important;
+    }
+}
