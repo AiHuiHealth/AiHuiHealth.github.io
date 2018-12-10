@@ -1,0 +1,180 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱汇健康</title>
+    <link rel="icon" type="image/png" href="advert/logo.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="advert/js/jquery.min.js"></script>
+    <script src="advert/js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header" id="pc-header">
+        <div class="logo"></div>
+        <div class="tab-wrap">
+            <ul>
+                <li>与爱汇合作</li>
+                <li>加入爱汇</li>
+                <li>新闻中心</li>
+                <li>产品生态</li>
+                <li class="selected">首页</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header" id="phone-header">
+        <div class="logo"></div>
+        <span class="title">首页</span>
+        <div class="menu"></div>
+    </div>
+    <div class="sidenav">
+        <div class="close"></div>
+        <ul>
+            <li class="selected">首页</li>
+            <li>产品生态</li>
+            <li>新闻中心</li>
+            <li>加入爱汇</li>
+            <li>与爱汇合作</li>
+        </ul>
+    </div>
+    <div class="about-wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="aihuiWeb/home.png" alt="">
+                <img class="swiper-slide" src="aihuiWeb/home-two.png" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <img src="aihuiWeb/about-us.png" alt="" style="width:100%">
+        <div class="introduce-wrap">
+            <!--<img src="aihuiWeb/home1.png" alt="">-->
+        </div>
+        <div class="cp-wrap">
+            <img src="aihuiWeb/home1.png" alt="">
+            <ul>
+                <li><img src="aihuiWeb/cp1.png" alt=""></li>
+                <li><img src="aihuiWeb/cp2.png" alt=""></li>
+                <li><img src="aihuiWeb/cp3.png" alt=""></li>
+                <li><img src="aihuiWeb/cp4.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="home-news">
+            <img src="aihuiWeb/main-bgc.png" alt="">
+            <ul>
+                <li><img src="aihuiWeb/lyw-home.png" alt=""></li>
+                <li><img src="aihuiWeb/hw-home.png" alt=""></li>
+                <li><img src="aihuiWeb/hfl-home.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="user">
+            <img src="aihuiWeb/home2.png" alt="">
+        </div>
+        <div class="company-wrap">
+            <img src="aihuiWeb/home3.png" alt="">
+            <ul>
+                <li><img src="aihuiWeb/huawei.png" alt=""></li>
+                <li><img src="aihuiWeb/fsk.png" alt=""></li>
+                <li><img src="aihuiWeb/cw.png" alt=""></li>
+                <li><img src="aihuiWeb/yx.png" alt=""></li>
+            </ul>
+            <!--<img src="aihuiWeb/row.png" alt="" class="row">-->
+        </div>
+    </div>
+    <div class="footer">
+        <div class="main index-main">
+            <ul>
+                <li class="selected">首页</li>
+                <li>产品生态</li>
+                <li>新闻中心</li>
+                <li>加入爱汇</li>
+                <li>与爱汇合作</li>
+            </ul>
+            <p class="t-pc-d">
+                <span>T 40066-40067</span>
+                <span>PC 20123</span>
+                <span>D 上海市浦东新区龙东大道3000号张江集电港1号楼602室</span>
+            </p>
+            <p class="community">
+                <span>&copy;2018上海爱汇健康科技有限公司</span>
+                <span id='icp' style="cursor: pointer;">沪ICP备16051261号</span>
+                <span></span>
+                <span>
+                    <i><em><img src="aihuiWeb/phone2.png" alt=""></em></i>
+                    <i><em><img src="aihuiWeb/wx2.png" alt=""></em></i>
+                    <i><em><img src="aihuiWeb/email2.png" alt=""></em></i>
+                    <!--<i><em><img src="aihuiWeb/map2.png" alt=""></em></i>-->
+                    <i class="map-img"><em></em></i>
+                    <div id="map"></div>
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="phone-footer">
+        <div>
+            <span>移动版</span>
+            <span>|</span>
+            <span>电脑版</span>
+            <p class="back-top">返回顶部</p>
+        </div>
+        <p>&copy;2018上海爱汇健康科技有限公司</p>
+    </div>
+</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274551172'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274551172%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script>
+    $(function () {
+        var swiper = new Swiper('.swiper-container', {
+            speed: 200,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        $(".community span:nth-child(4) i").hover(function () {
+            $(this).children('em').fadeIn(300)
+        }, function () {
+            $(this).children('em').fadeOut(300)
+        })
+        $(".community span:nth-child(4) i:nth-child(4)").hover(function () {
+            $("#map").fadeIn(300)
+        })
+        $(document).on("click", function (e) {
+            if ($(e.target).attr("class") !== 'BMap_mask' && $(e.target).attr("class") !== 'map-img') { // 除地图以外的点击位置
+                $("#map").fadeOut(300)
+            }
+        })
+        // 备案号链接
+        $("#icp").on('click', function () {
+            window.location.href = 'http://www.miitbeian.gov.cn'
+        })
+
+        $(".cp-wrap ul li").on("click", function () {
+            window.location.href = 'product.html'
+        })
+        $(".company-wrap").on("click", function () {
+            window.location.href = 'cooperate.html'
+        })
+        $('.home-news ul li:nth-child(1)').on("click", function () {
+            window.location.href = 'withLyw.html'
+        })
+        $('.home-news ul li:nth-child(2)').on("click", function () {
+            window.location.href = 'withHw.html'
+        })
+        $('.home-news ul li:nth-child(3)').on("click", function () {
+            window.location.href = 'withHfl.html'
+        })
+        getMap()
+    })
+</script>
+</body>
+</html>

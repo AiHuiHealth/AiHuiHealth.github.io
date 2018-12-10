@@ -1,0 +1,172 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱汇健康</title>
+    <link rel="icon" type="image/png" href="advert/logo.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/news.css">
+    <script src="advert/js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header" id="pc-header">
+        <div class="logo"></div>
+        <div class="tab-wrap">
+            <ul>
+                <li>与爱汇合作</li>
+                <li>加入爱汇</li>
+                <li class="selected">新闻中心</li>
+                <li>产品生态</li>
+                <li>首页</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header" id="phone-header">
+        <div class="logo"></div>
+        <span class="title">新闻中心</span>
+        <div class="menu"></div>
+    </div>
+    <div class="sidenav">
+        <div class="close"></div>
+        <ul>
+            <li>首页</li>
+            <li>产品生态</li>
+            <li class="selected">新闻中心</li>
+            <li>加入爱汇</li>
+            <li>与爱汇合作</li>
+        </ul>
+    </div>
+    <div class="bgc">
+        <img src="aihuiWeb/bgc-news.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="news-wrap">
+            <img src="aihuiWeb/nyzh.png" alt="" id="nyzh" class="news-png">
+            <img src="aihuiWeb/lyw-home.png" alt="" id="lyw" class="news-png">
+            <img src="aihuiWeb/yo.png" alt="" id="yo" class="news-png">
+        </div>
+        <div class="news-wrap">
+            <img src="aihuiWeb/hfl-home.png" alt="" id="hfl" class="news-png">
+            <img src="aihuiWeb/hw-home.png" alt="" id="hw" class="news-png">
+            <img src="aihuiWeb/ly-news.png" alt="" id="ly" class="news-png">
+        </div>
+        <div class="news-wrap">
+            <img src="aihuiWeb/ny-news.png" alt="" id="ny" class="news-png">
+            <img src="aihuiWeb/zt-news.png" alt="" id="zt" class="news-png">
+            <div id="hosp" class="news-png" style="margin-right:0;">
+                <img src="aihuiWeb/main5.png" alt="" style="width:100%;display: block;">
+                <img src="aihuiWeb/pause.png" alt="" class="pause" id="pause">
+            </div>
+        </div>
+        <div class="main-video" >
+            <div class="video-wrap" style="margin-right:2%;">
+                <img src="aihuiWeb/news2.png" alt="" class="video-news" id="ke2">
+                <div>
+                    <p>36氪第二次对爱汇进行了专访</p>
+                    <p>2018年5月22日</p>
+                </div>
+            </div>
+            <div class="video-wrap" id="news-video">
+                <img src="aihuiWeb/news3.png" alt="" class="video-news">
+                <div>
+                    <p>惠州电视台对爱汇暖屏安装报道</p>
+                    <p>2017年11月22日</p>
+                </div>
+                <img src="aihuiWeb/pause.png" alt="" class="pause">
+            </div>
+        </div>
+        <div class="news-wrap">
+            <img src="aihuiWeb/zzsey-news.png" alt="" id="zzsey" class="news-png">
+            <img src="aihuiWeb/main1.png" alt="" id="main1" class="news-png">
+            <img src="aihuiWeb/main2.png" alt="" id="main2" class="news-png">
+        </div>
+        <div class="news-wrap">
+            <img src="aihuiWeb/main3.png" alt="" id="main3" class="news-png">
+            <img src="aihuiWeb/hndst-news.png" alt="" id="hndst" class="news-png">
+            <img src="aihuiWeb/main4.png" alt="" id="main4" class="news-png">
+        </div>
+        <div class="news-wrap">
+            <img src="aihuiWeb/main6.png" alt="" id="main6" class="news-png">
+            <img src="aihuiWeb/jj.png" alt="" id="jj" class="news-png">
+        </div>
+        <div class="news-wrap">
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $(".video-wrap").hover(function () {
+            $(this).children('div').slideDown()
+        }, function () {
+            $(this).children('div').slideUp()
+        });
+        $("#news-video").on("click",function () {
+            window.location.href = 'aihuiWeb/news.mp4'
+        })
+
+        $("#hndst").on("click", function () {
+            window.location.href = 'withHndst.html'
+        })
+
+        $("#ly").on("click", function () {
+            window.location.href = 'withLy.html'
+        })
+
+        $("#ny").on("click", function () {
+            window.location.href = 'withNy.html'
+        })
+
+        $("#zt").on("click", function () {
+            window.location.href = 'withZt.html'
+        })
+        $("#zzsey").on("click", function () {
+            window.location.href = 'withZzsey.html'
+        })
+        $("#ke2").on("click", function () {
+            window.location.href = 'withKe.html'
+        })
+        // 院长推荐视频
+        $("#hosp").on("click", function () {
+            window.location.href = 'aihuiWeb/hops.mp4'
+        })
+        $("#main1").on("click", function () {
+            window.location.href = 'withLt.html'
+        })
+        $("#main2").on("click", function () {
+            window.location.href = 'withQsc.html'
+        })
+        $("#main3").on("click", function () {
+            window.location.href = 'withHc.html'
+        })
+        $("#main4").on("click", function () {
+            window.location.href = 'withKe2.html'
+        })
+        $("#main6").on("click", function () {
+            window.location.href = 'withLyw2.html'
+        })
+        $('#lyw').on("click", function () {
+            window.location.href = 'withLyw.html'
+        })
+        $('#hw').on("click", function () {
+            window.location.href = 'withHw.html'
+        })
+        $('#hfl').on("click", function () {
+            window.location.href = 'withHfl.html'
+        })
+        $('#yo').on("click", function () {
+            window.location.href = 'withYo.html'
+        })
+        $('#jj').on("click", function () {
+            window.location.href = 'withJj.html'
+        })
+        $('#nyzh').on("click", function () {
+            window.location.href = 'withNyzh.html'
+        })
+    });
+</script>
+</body>
+</html>

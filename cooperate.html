@@ -1,0 +1,131 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱汇健康</title>
+    <link rel="icon" type="image/png" href="advert/logo.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cooperate.css">
+    <script src="advert/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="header" id="pc-header">
+        <div class="logo"></div>
+        <div class="tab-wrap">
+            <ul>
+                <li class="selected">与爱汇合作</li>
+                <li>加入爱汇</li>
+                <li>新闻中心</li>
+                <li>产品生态</li>
+                <li>首页</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header" id="phone-header">
+        <div class="logo"></div>
+        <span class="title">与爱汇合作</span>
+        <div class="menu"></div>
+    </div>
+    <div class="sidenav">
+        <div class="close"></div>
+        <ul>
+            <li>首页</li>
+            <li>产品生态</li>
+            <li>新闻中心</li>
+            <li>加入爱汇</li>
+            <li class="selected">与爱汇合作</li>
+        </ul>
+    </div>
+    <div class="bg">
+        <img src="aihuiWeb/cooperate-bg1.png" alt="">
+        <img src="aihuiWeb/cooperate-bg2.png" alt="" class="hide">
+        <img src="aihuiWeb/cooperate-bg3.png" alt="" class="hide">
+        <img src="aihuiWeb/cooperate-bg4.png" alt="" class="hide">
+    </div>
+    <div class="main">
+        <div class="tab">
+            <ul>
+                <li class="selected">平台入驻<i></i></li>
+                <li>医院安装申请<i></i></li>
+                <li>广告招商<i></i></li>
+                <li>城市代理<i></i></li>
+            </ul>
+        </div>
+        <div class="main1">
+            <p>已经入驻的平台和企业</p>
+            <ul>
+                <li><img src="aihuiWeb/hs.png" alt=""></li>
+                <li><img src="aihuiWeb/fx.jpg" alt=""></li>
+                <li><img src="aihuiWeb/tk.jpg" alt=""></li>
+                <li><img src="aihuiWeb/pa.png" alt=""></li>
+                <li><img src="aihuiWeb/xm.jpg" alt=""></li>
+                <li><img src="aihuiWeb/qcy.jpg" alt=""></li>
+                <li><img src="aihuiWeb/his.jpg" alt=""></li>
+                <li><img src="aihuiWeb/by.jpg" alt=""></li>
+                <li><img src="aihuiWeb/cz.png" alt=""></li>
+                <li><img src="aihuiWeb/jy.jpg" alt=""></li>
+                <li><img src="aihuiWeb/lh.png" alt=""></li>
+                <li><img src="aihuiWeb/sdc.jpg" alt=""></li>
+                <li><img src="aihuiWeb/zw.jpg" alt=""></li>
+                <li><img src="aihuiWeb/lt.png" alt=""></li>
+                <li><img src="aihuiWeb/gf.png" alt=""></li>
+                <li><img src="aihuiWeb/qsc.png" alt=""></li>
+                <li><img src="aihuiWeb/more.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="main2 hide">
+            <img src="aihuiWeb/hops.png" alt="">
+        </div>
+        <div class="main3 hide">
+            <img src="aihuiWeb/advert.png" alt="">
+        </div>
+        <div class="main4 hide">
+            <img src="aihuiWeb/city.png" alt="">
+        </div>
+        <div class="info">
+            <i class="map-img"><em></em></i>
+            <i><em><img src="aihuiWeb/email4.png" alt=""></em></i>
+            <i><em><img src="aihuiWeb/wx4.png" alt=""></em></i>
+            <i><em><img src="aihuiWeb/phone4.png" alt=""></em></i>
+        </div>
+        <div id="map"></div>
+        <!--<div class="div-row"></div>-->
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.tab ul li').on("click", function () {
+            $(this).addClass('selected').siblings().removeClass('selected')
+            var index = $(this).index() + 1
+            $(".bg img:nth-child("+index+")").removeClass("hide").siblings().addClass("hide")
+            $(".main"+index).removeClass('hide').siblings().addClass("hide")
+            $(".tab").removeClass('hide')
+            $(".info").removeClass('hide')
+        })
+        $(".info i").hover(function () {
+            $(this).children('em').fadeIn(300)
+            $("#map").fadeOut(300)
+//            $(".div-row").fadeOut(300)
+        }, function () {
+            $(this).children('em').fadeOut(300)
+        })
+        $(".info i:nth-child(1)").hover(function () {
+            $("#map").fadeIn(300)
+//            $(".div-row").fadeIn(300)
+        })
+        $(document).on("click", function (e) {
+            var tag = $(e.target).attr("class")
+            if (tag !== 'BMap_mask' && tag !== 'map-img') { // 除地图以外的点击位置
+                $("#map").fadeOut(300)
+//                $(".div-row").fadeOut(300)
+            }
+        })
+        getMap()
+    })
+</script>
+</body>
+</html>
