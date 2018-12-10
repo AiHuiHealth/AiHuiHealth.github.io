@@ -142,7 +142,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     /*box-shadow:0px 0px  6px 2px #aaa;*/
 }
 .info i:nth-child(1) {
-    background: url('http://file.aihuizhongyi.com/aihuiWeb/map3.png');
+    background: url('https://AiHuiHealth.github.io/aihuiWeb/map3.png');
 }
 .info i:nth-child(1) em{
     position:absolute;
@@ -151,7 +151,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     display:none;
 }
 .info i:nth-child(2) {
-    background: url('http://file.aihuizhongyi.com/aihuiWeb/email3.png');
+    background: url('https://AiHuiHealth.github.io/aihuiWeb/email3.png');
 }
 .info i:nth-child(2) em{
     position:absolute;
@@ -160,7 +160,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     display:none;
 }
 .info i:nth-child(3) {
-    background: url('http://file.aihuizhongyi.com/aihuiWeb/wx3.png');
+    background: url('https://AiHuiHealth.github.io/aihuiWeb/wx3.png');
 }
 .info i:nth-child(3) em{
     position:absolute;
@@ -169,7 +169,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     display:none;
 }
 .info i:nth-child(4) {
-    background: url('http://file.aihuizhongyi.com/aihuiWeb/phone3.png');
+    background: url('https://AiHuiHealth.github.io/aihuiWeb/phone3.png');
 }
 .info i:nth-child(4) em{
     position:absolute;
@@ -185,7 +185,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     .header .logo{
         width:185px;
         height:48px;
-        background: url('http://file.aihuizhongyi.com/aihuiWeb/logo.png');
+        background: url('https://AiHuiHealth.github.io/aihuiWeb/logo.png');
         position:absolute;
         top:70px;
         left:2%;
@@ -193,7 +193,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     .header .menu{
         width:42px;
         height:38px;
-        background: url('http://file.aihuizhongyi.com/aihuiWeb/menu.png');
+        background: url('https://AiHuiHealth.github.io/aihuiWeb/menu.png');
         position:absolute;
         top:75px;
         right:4%;
@@ -220,7 +220,7 @@ input[type="text"],input[type="password"],input[type="submit"],select{
     .sidenav .close{
         width:40px;
         height:40px;
-        background: url('http://file.aihuizhongyi.com/aihuiWeb/close.png');
+        background: url('https://AiHuiHealth.github.io/aihuiWeb/close.png');
     }
     .sidenav ul{
         width:100%;
